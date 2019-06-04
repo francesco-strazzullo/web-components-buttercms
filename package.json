@@ -1,0 +1,20 @@
+{
+  "name": "web-components-buttercms",
+  "version": "1.0.0",
+  "description": "Web Components Examples for ButterCMS",
+  "scripts": {
+    "start": "serve",
+    "precommit": "lint-staged"
+  },
+  "author": "Francesco Strazzullo (francesco.strazzullo86@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "serve": "^11.0.1",
+    "standard": "^12.0.1"
+  },
+  "lint-staged": {
+    "*.js": "standard --fix"
+  }
+}
