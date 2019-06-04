@@ -1,2 +1,3 @@
 # web-components-buttercms
-Create an app using ButterCMS and web components
+An Example of Web Components used with ButterCMS
+
