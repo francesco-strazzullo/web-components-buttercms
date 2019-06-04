@@ -1,9 +1,29 @@
 <html>
     <head>
         <title>Web Componets with ButterCMS</title>
+        <script src="https://cdnjs.buttercms.com/buttercms-1.1.4.min.js"></script>
     </head>
     <body>
-        <h1>Web Components with ButterCMS</h1>
+        <template data-list-container>
+            <div>
+                <h3>Latest Posts</h3>
+                <ul data-list></ul>
+            </div>
+        </template>
+        <template data-row>
+            <li>
+                <strong data-title></strong>
+                <div>
+                    <small>Published on: <span data-published></span></small>
+                </div>
+            </li>
+        </template>
+        <button>Next page</button>
+        <buttercms-list 
+            page="1"
+            page-size="2"
+            category="webcomponents">
+        </buttercms-list>
         <script src="index.js" type="module"></script>
     </body>
 </html>
